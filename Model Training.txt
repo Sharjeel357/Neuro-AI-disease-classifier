@@ -1,0 +1,39 @@
+## Model Training
+
+The CNN models used in NeuroAI were independently trained using Google Colab notebooks and then integrated into the final Gradio application.
+
+| Classification Task | Training Notebook                                                                                               |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Alzheimer's Disease | [View Training Notebook](https://colab.research.google.com/drive/1brLD1Opa2jDMAkEXDCUalhZ5H9YN1mkE?usp=sharing) |
+| Brain Stroke        | [View Training Notebook](https://colab.research.google.com/drive/1kqcWgCc3I3gMnDqG-zEGnjAaZMgQyv2v?usp=sharing) |
+| Brain Tumor         | [View Training Notebook](https://colab.research.google.com/drive/1ZD-8atxV62lK0XnVXhTBh_cpbrZ5gQ-b?usp=sharing) |
+| Brain Hemorrhage    | [View Training Notebook](https://colab.research.google.com/drive/1VWI4RYAmWKIgm93QYqJNEvbAZqY7GHOx?usp=sharing) |
+
+### Training Workflow
+
+```text
+Dataset
+   │
+   ▼
+Data Preprocessing
+   │
+   ▼
+Image Resizing & Normalization
+   │
+   ▼
+CNN Architecture
+   │
+   ▼
+Model Training
+   │
+   ▼
+Validation & Evaluation
+   │
+   ▼
+Trained Model (.pth)
+   │
+   ▼
+NeuroAI Gradio Application
+```
+
+These notebooks contain the model development and training workflow, while the main repository contains the trained model weights and the deployed inference application.
